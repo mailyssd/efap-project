@@ -1,30 +1,609 @@
-body {
-  background-color: rgb(234, 235, 235);
-  margin: 0;
+/* Import de la police estivale Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800&display=swap');
+
+
+
+/* 🎨 Couleurs summer fraîches */
+:root {
+  --jaune-ete: #FFF799;        /* Jaune soleil doux */
+  --rose-corail: #FF7DAE;      /* Rose corail vibrant */
+  --turquoise: #6EE7E4;        /* Turquoise tropical */
+  --texte-foncé: #3a3a3a;      /* Texte bien lisible */
+  --orange-mangue: #FFB76B;    /* Optionnel, pour accents */
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 0 24px
+/* Réinitialisation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* 🌴 Barre de navigation */
+  .navbar {
+    background-color: var(--turquoise) !important;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.95em;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--rose-corail);
 }
 
 .logo {
-  width: 180px;
-}
-
-.link {
-  text-decoration: none;
-  font-size: 24px;
-  background-color: purple;
+  font-weight: bold;
+  font-size: 1.5em;
   color: white;
-  padding: 16px 32px;
-  border-radius: 4px;
 }
 
-.links {
+
+/* 🌞 Section principale */
+.hero {
+  background-color: var(--jaune-ete);
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.hero h1 {
+  color: var(--rose-corail);
+  font-size: 5em;
+  font-weight: 700;
+  margin-bottom: -60px;
+}
+
+/* 🌸 Image brumes summer */
+.image-wrapper {
+  width: 100%;
+  display: block;
+  transform: rotate(25deg);
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 600px 200px 600px 200px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+
+
+.image-wrapper img {
+  width: 100%;
+  display: block;
+}
+/* === Section présentation inspirée du style barbecue === */
+
+.presentation {
+  background-color: var(--jaune-pastel); /* Conserve l’ambiance summer */
+  padding: 80px 40px;
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: var(--texte-foncé);
+}
+
+.presentation .texte-gauche {
+  flex: 1;
+  min-width: 280px;
+  margin-bottom: 20px;
+}
+
+.presentation .texte-gauche h2 {
+  color: var(--rose-pastel);
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.presentation .texte-gauche p {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--rose-pastel);
+}
+
+.presentation .texte-droite {
+  flex: 1;
+  min-width: 280px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--texte-foncé);
+  max-width: 600px;
+}
+
+/* Bandeau arrondi avec texte animé */
+.bandeau {
+  background-color: var(--rose-pastel);
+  color: var(--jaune-pastel);
+  padding: 30px 0;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.5em;
+  transform: rotate(-2deg);
+  letter-spacing: 1px;
+  margin-top: 60px;
+}
+.image-wrapper img {
+  width: 100%;
+  display: block;
+}
+/* === Section présentation inspirée du style barbecue === */
+
+.presentation {
+  background-color: var(--jaune-ete);
+  padding: 80px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: var(--texte-foncé);
+}
+
+.presentation .texte-gauche {
+  flex: 1;
+  min-width: 280px;
+  margin-bottom: 20px;
+}
+
+.presentation .texte-gauche h2 {
+  color: var(--rose-corail);
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.presentation .texte-gauche p {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--rose-corail);
+}
+
+.presentation .texte-droite {
+  flex: 1;
+  min-width: 280px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--texte-foncé);
+  max-width: 600px;
+}
+
+/* Import de la police estivale Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800&display=swap');
+
+
+
+/* 🎨 Couleurs summer fraîches */
+:root {
+  --jaune-ete: #FFF799;        /* Jaune soleil doux */
+  --rose-corail: #FF7DAE;      /* Rose corail vibrant */
+  --turquoise: #6EE7E4;        /* Turquoise tropical */
+  --texte-foncé: #3a3a3a;      /* Texte bien lisible */
+  --orange-mangue: #FFB76B;    /* Optionnel, pour accents */
+}
+
+/* Réinitialisation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* 🌴 Barre de navigation */
+.navbar {
+  background-color: var(--orange-mangue);
+  color: var(--rose-corail);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.95em;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--turquoise);
+}
+
+/* 🌞 Section principale */
+.hero {
+  background-color: var(--jaune-ete);
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.hero h1 {
+  color: var(--rose-corail);
+  font-size: 5em;
+  font-weight: 700;
+  margin-bottom: -60px;
+}
+
+/* 🌸 Image brumes summer */
+.image-wrapper {
+  width: 100%;
+  display: block;
+  transform: rotate(25deg);
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 600px 200px 600px 200px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+
+
+.image-wrapper img {
+  width: 100%;
+  display: block;
+}
+/* === Section présentation inspirée du style barbecue === */
+
+.presentation {
+  background-color: var(--jaune-pastel); /* Conserve l’ambiance summer */
+  padding: 80px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: var(--texte-foncé);
+}
+
+.presentation .texte-gauche {
+  flex: 1;
+  min-width: 280px;
+  margin-bottom: 20px;
+}
+
+.presentation .texte-gauche h2 {
+  color: var(--rose-pastel);
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.presentation .texte-gauche p {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--rose-pastel);
+}
+
+.presentation .texte-droite {
+  flex: 1;
+  min-width: 280px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--texte-foncé);
+  max-width: 600px;
+}
+
+/* Bandeau arrondi avec texte animé */
+.bandeau {
+  background-color: var(--rose-pastel);
+  color: var(--jaune-pastel);
+  padding: 30px 0;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.5em;
+  transform: rotate(-2deg);
+  letter-spacing: 1px;
+  margin-top: 60px;
+}
+.image-wrapper img {
+  width: 100%;
+  display: block;
+}
+/* === Section présentation inspirée du style barbecue === */
+
+.presentation {
+  background-color: var(--jaune-ete);
+  padding: 80px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: var(--texte-foncé);
+}
+
+.presentation .texte-gauche {
+  flex: 1;
+  min-width: 280px;
+  margin-bottom: 20px;
+}
+
+.presentation .texte-gauche h2 {
+  color: var(--rose-corail);
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.presentation .texte-gauche p {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--rose-corail);
+}
+
+.presentation .texte-droite {
+  flex: 1;
+  min-width: 280px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--texte-foncé);
+  max-width: 600px;
+}
+.bandeau {
+  background-color: #f8f3e9;
+  padding: 30px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Bandeau qui défile horizontalement */
+.bandeau .conteneur {
+  display: inline-block;
+  white-space: nowrap;
+  animation: defilement 20s linear infinite;
+}
+
+/* Style de chaque mot */
+.bandeau span {
+  display: inline-block;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #3a3a3a;
+  font-family: 'Rubik', sans-serif;
+  margin: 0 16px;
+
+  /* Animation vague plus intense */
+  animation: wave 2.5s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.15s);
+}
+
+/* 🔁 Animation de défilement vers la gauche */
+@keyframes defilement {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* 🌊 Animation wavy PLUS visible */
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px); /* monte plus haut */
+  }
+  75% {
+    transform: translateY(15px); /* descend plus bas */
+  }
+}
+
+/* Index pour chaque mot (peut en ajouter jusqu'à 20 ou +) */
+.bandeau span:nth-child(1)  { --i: 1; }
+.bandeau span:nth-child(2)  { --i: 2; }
+.bandeau span:nth-child(3)  { --i: 3; }
+.bandeau span:nth-child(4)  { --i: 4; }
+.bandeau span:nth-child(5)  { --i: 5; }
+.bandeau span:nth-child(6)  { --i: 6; }
+.bandeau span:nth-child(7)  { --i: 7; }
+.bandeau span:nth-child(8)  { --i: 8; }
+.bandeau span:nth-child(9)  { --i: 9; }
+.bandeau span:nth-child(10) { --i: 10; }
+.bandeau span:nth-child(11) { --i: 11; }
+.bandeau span:nth-child(12) { --i: 12; }
+.bandeau span:nth-child(13) { --i: 13; }
+.bandeau span:nth-child(14) { --i: 14; }
+.bandeau span:nth-child(15) { --i: 15; }
+
+/* 🧃 Section produits style summer */
+.nos-produits {
+  background-color: var(--jaune-ete);
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--texte-foncé);
+}
+
+.nos-produits h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 3.2em;
+  font-weight: 800;
+  color: var(--rose-corail);
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+.nos-produits h2 span {
+  font-weight: 500;
+  color: var(--turquoise);
+}
+
+/* 🥫 Grille des produits */
+.produits-liste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* 🎁 Carte produit */
+.produit {
+  background-color: white;
+  border-radius: 24px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.produit img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 15px;
+}
+
+.produit h3 {
+  color: var(--rose-corail);
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+.produit p {
+  color: var(--texte-foncé);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.activites {
+  background-color: #fffef4;
+  padding: 100px 40px;
+  text-align: center;
+  position: relative;
+}
+
+.activites h2 {
+  font-size: 3em;
+  color: var(--rose-corail);
+  margin-bottom: 60px;
+  font-weight: 800;
+  font-family: 'Rubik', sans-serif;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carte {
+  background-color: var(--jaune-ete);
+  border-radius: 30px;
+  padding: 30px;
+  min-width: 280px;
+  flex: 0 0 auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.carte:hover {
+  transform: translateY(-10px);
+}
+
+.carte img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.carte h3 {
+  font-size: 1.6em;
+  color: var(--turquoise);
+  margin-bottom: 10px;
+}
+
+.carte p {
+  color: var(--texte-foncé);
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+/* 🎯 Bouton acheter */
+.btn-acheter {
+  background-color: var(--rose-corail);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px; /* bouton ovale */
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-acheter:hover {
+  background-color: var(--turquoise);
+  color: var(--texte-foncé);
+}
+
+/* ➡️ Flèches de défilement */
+.fleche {
+  background-color: white;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.fleche:hover {
+  background-color: var(--turquoise);
+  color: white;
+}
+
+.fleche.gauche {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fleche.droite {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
